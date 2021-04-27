@@ -1,12 +1,12 @@
 //
-// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
+// Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.0 
 // Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2021.04.27 a las 09:23:31 AM CEST 
+// Generado el: 2021.04.27 a las 09:47:43 AM CEST 
 //
 
 
-package com.uniovi.soap.ws;
+package com.uniovi.wsdl;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -25,7 +25,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="dni" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="user" type="{http://uniovi.com/soap/ws}user"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -36,36 +36,36 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "dni"
+    "user"
 })
-@XmlRootElement(name = "getMarksRequest")
-public class GetMarksRequest {
+@XmlRootElement(name = "getMarksResponse")
+public class GetMarksResponse {
 
     @XmlElement(required = true)
-    protected String dni;
+    protected User user;
 
     /**
-     * Obtiene el valor de la propiedad dni.
+     * Obtiene el valor de la propiedad user.
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link User }
      *     
      */
-    public String getDni() {
-        return dni;
+    public User getUser() {
+        return user;
     }
 
     /**
-     * Define el valor de la propiedad dni.
+     * Define el valor de la propiedad user.
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link User }
      *     
      */
-    public void setDni(String value) {
-        this.dni = value;
+    public void setUser(User value) {
+        this.user = value;
     }
 
 }
